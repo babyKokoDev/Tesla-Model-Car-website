@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+
+body{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    z-index: 100;
+}
+
+.collapse ul{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+
+}
+
+.offcanvas-body ul{
+
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.collapse ul.hover-effect a:hover{
+    background-color: #0000000d;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:576px) {
+    
+    .offcanvas{
+        z-index: 1000000;
+        width: 300px !important;
+    }
+    .btn1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .btn2{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .div1{
+        background-size:cover;
+    }
+
+    footer a{
+       display: block;
+       gap: 20px !important;
+    }
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler:hover{
+    border: none !important;
+}
+
+.div1{
+  background-image: url(./car1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.div2{
+    background-image: url(./car2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .div3{
+    background-image: url(./car3.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .div4{
+    background-image: url(./car4.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .div5{
+    background-image: url(./solar1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .div6{
+    background-image: url(./solar2.webp);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .div7{
+    background-image: url(./last\ image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+
+.div1 a:hover{
+
+    text-decoration-thickness: 2px;
+}
+
+.btn1{
+    background-color: #171a20cc !important;
+    padding: 10px 70px !important;
+    font-size: 16px !important;
+    margin-right: 40px;
+ 
+}
+
+.btn2{
+    background-color: #f4f4f4a6 !important;
+    padding: 10px 70px !important;
+    font-size: 16px !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.btn3{
+    background-color: #000000 !important;
+    padding: 10px 70px !important;
+    font-size: 16px !important;
+    backdrop-filter: blur(8px) !important;
+    width: 300px;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5c5e62;
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/fullview.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-10 position-fixed start-0 end-0">
+        <div class="container-fluid ms-1 me-1">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 278.7 36.3">
+                    <path fill="#5e5e5e"
+                        d="M238.1 14.4v21.9h7V21.7h25.6v14.6h7V14.4h-39.6M244.3 7.3h27c3.8-.7 6.5-4.1 7.3-7.3H237c.8 3.2 3.6 6.5 7.3 7.3M216.8 36.3c3.5-1.5 5.4-4.1 6.2-7.1h-31.5V.1h-7.1v36.2h32.4M131.9 7.2h25c3.8-1.1 6.9-4 7.7-7.1H125v21.4h32.4V29H132c-4 1.1-7.4 3.8-9.1 7.3h41.5V14.4H132l-.1-7.2M70.3 7.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3M70.3 21.6h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.5 7.4 7.3M70.3 36.3h27c3.8-.7 6.6-4.1 7.3-7.3H62.9c.8 3.2 3.6 6.6 7.4 7.3M0 .1c.8 3.2 3.6 6.4 7.3 7.2h11.4l.6.2v28.7h7.1V7.5l.6-.2h11.4c3.8-1 6.5-4 7.3-7.2V0L0 .1" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1"
+                aria-controls="offcanvasNavbar">
+                <div class="btn btn-light" style="background-color:#0000000d;">Menu</div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 hover-effect fw-bold" style="font-size: 15px;">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">Model S</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Model 3</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Model X</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="#">Model Y</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Solar Roof</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Solar Panels</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 hover-effect fw-bold" style="font-size: 15px;">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" aria-current="page" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                            aria-controls="offcanvasNavbar">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-4">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Existing Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Used Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trade-In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Demo Drive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Insurance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cybertruck</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Roadster</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Semi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Charging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Powerwall</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Commercial Energy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Investor Relations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar1" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-4">
+                <li class="nav-item me-3">
+                    <a class="nav-link" aria-current="page" href="#">Model S</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Model 3</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Model X</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" aria-current="page" href="#">Model Y</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Solar Roof</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Solar Panels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Existing Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Used Inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trade-In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Demo Drive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Insurance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Charging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Powerwall</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Commercial Energy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Investor Relations</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link" aria-current="page" href="#">Shop</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="#">Account</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar3"
+                        aria-controls="offcanvasNavbar">More &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ></a>
+                </li>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header d-flex">
+            <span><a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1"
+                    aria-controls="offcanvasNavbar">
+                    <h5 style="font-size: 16px; margin-top: 15px;"> back </h5>
+                </a></span>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-4">
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Cybertruck</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Roadster</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" aria-current="page" href="#">Semi</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+        </div>
+    </div>
+
+
+        <div class="position-static start-0 end-0 div1 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Model Y</p>
+            <h5 class="fw-normal" style="font-size: 16px; margin-top: -15px;"><a href="#" style="color: black;">Schedule
+                    a
+                    Demo Drive</a></h5>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-lg text-white btn1">Custom Order</button>
+                <button type="button" class="btn btn-lg btn2">View Inventory</button>
+            </div>
+        </div>
+
+
+        <div class="div2 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Model 3</p>
+            <h5 class="fw-normal" style="font-size: 16px; margin-top: -15px;"><a href="#" style="color: black;">Schedule
+                    a
+                    Demo Drive</a></h5>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-lg text-white btn1">Custom Order</button>
+                <button type="button" class="btn btn-lg btn2">View Inventory</button>
+            </div>
+        </div>
+
+        <div class="div3 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Model S</p>
+            <h5 class="fw-normal" style="font-size: 16px; margin-top: -15px;"><a href="#" style="color: black;">Schedule
+                    a
+                    Demo Drive</a></h5>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-lg text-white btn1">Custom Order</button>
+                <button type="button" class="btn btn-lg btn2">View Inventory</button>
+            </div>
+        </div>
+
+        <div class="div4 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Model X</p>
+            <h5 class="fw-normal" style="font-size: 16px; margin-top: -15px;"><a href="#" style="color: black;">Schedule
+                    a
+                    Demo Drive</a></h5>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-lg text-white btn1">Custom Order</button>
+                <button type="button" class="btn btn-lg btn2">View Inventory</button>
+            </div>
+        </div>
+
+
+        <div class="div5 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Solar Panels</p>
+            <h5 class="fw-normal" style="font-size: 16px; margin-top: -15px;">Lowest Cost Solar Panels in America</h5>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-lg text-white btn1">Order Now</button>
+                <button type="button" class="btn btn-lg btn2">Learn More</button>
+            </div>
+        </div>
+
+        <div class="div6 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Solar Roof</p>
+            <h5 class="fw-normal" style="font-size: 16px; margin-top: -15px;">Produce Clean Energy From Your Roof</h5>
+            <div style="margin-top: 300px;">
+                <button type="button" class="btn btn-lg text-white btn1">Order Now</button>
+                <button type="button" class="btn btn-lg btn2">Learn More</button>
+            </div>
+        </div>
+
+        <div class="div7 align-items-center justify-contents-center text-center p-5">
+            <p class="fs-1 fw-semibold" style="margin-top: 50px;">Accessories</p>
+            <div style="margin-top: 300px;" class="mx-auto">
+                <button type="button" class="btn btn-lg text-white btn3">Shop Now</button>
+            </div>
+            <footer class="p-5">
+                <div class="">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#">Tesla @ 2023</a>
+                            <a href="#">Privacy & Legal</a>
+                            <a href="#">Vehicle Recalls</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Careers</a>
+                            <a href="#">News</a>
+                            <a href="#">Engage</a>
+                            <a href="#">Locations</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
